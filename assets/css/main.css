@@ -1,0 +1,22 @@
+h1, div {
+    font-family: "Courier New";
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.aligned {
+    display: flex;
+}
+
+.title {
+    font-size: 3em;
+}
+
+.title > .bold {
+    margin-right: 12px;
+}
+
+.body {
+    padding-left: 20%;
+    width: 60%;
+}
