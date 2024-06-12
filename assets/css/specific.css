@@ -1,0 +1,25 @@
+/* danger field */
+
+.dangerCtn {
+    display: flex;
+    align-items: center;
+
+    border: 0px solid;
+    border-radius: 15px;
+    background-color: #faa878;
+}
+
+.dangerCtn > .logo {
+    font-size: 2em;
+    margin: 15px;
+}
+
+.dangerCtn > .dangerText {
+    margin-left: 10px;
+    font-size: 1.2em;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    height: auto;
+}

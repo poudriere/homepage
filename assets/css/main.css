@@ -38,6 +38,18 @@ h2.title {
 .body {
     padding-left: 5%;
     width: 90%;
+
+    margin-bottom: 20%;
+}
+
+#goBackCtn {
+    position: absolute;
+    top: 25px;
+    left: 25px;
+}
+
+.body {
+    margin-top: 60px;
 }
 
 @media only screen and (min-width: 1200px) {

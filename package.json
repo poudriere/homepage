@@ -14,5 +14,11 @@
     "nuxt": "^3.12.1",
     "vue": "^3.4.27",
     "vue-router": "^4.3.3"
+  },
+  "devDependencies": {
+    "@fortawesome/free-brands-svg-icons": "^6.5.2",
+    "@fortawesome/free-regular-svg-icons": "^6.5.2",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@vesp/nuxt-fontawesome": "^1.0.4"
   }
 }
