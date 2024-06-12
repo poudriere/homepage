@@ -21,7 +21,7 @@ definePageMeta({
 	
 	<H2> Qu'est ce que c'est matrix? </H2>
 	<p>
-	    Matrix est une application de messagerie, un entredeux de Signal et Discord. Elle permet la communication par chat, mais aussi des appels, entre différents utilisateurices. Matrix se rapproche de Signal avec sa communication chiffrée de bout à bout et ses fonctionnalités de chat privé et de groupes. Matrix emprunte aussi à Discord l'organisation en espace, avec des channels, des threads et des groupes privés. À l'instar de ces deux applications, Matrix doit être hébergée localement sur un serveur, et non pas les serveurs de GAFAM comme Discord et Signal (ce dernier chiffre les données de bout en bout, mais beaucoup d'informations restent exploitable, sur des serveurs dont nous n'avons pas la main). 
+	    Matrix est une application de messagerie, un entredeux de Signal et Discord. Elle permet la communication par chat, mais aussi des appels entre différents utilisateurices. Matrix se rapproche de Signal avec sa communication chiffrée de bout à bout et ses fonctionnalités de chat privé et de groupes. Matrix emprunte aussi à Discord l'organisation en espaces, avec des channels, des threads et des groupes privés. À l'instar de ces deux applications, Matrix doit être hébergée localement sur un serveur, et non pas les serveurs de GAFAM comme Discord et Signal (ce dernier chiffre les données de bout en bout, mais beaucoup d'informations restent exploitable, sur des serveurs dont nous n'avons pas la main). 
 	</p>
 	<p>
 	    Le tutoriel est disponible à -> <HLink href="/matrix"> ce lien </HLink>
