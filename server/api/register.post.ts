@@ -11,7 +11,7 @@ export default defineEventHandler(async (event) => {
     try {
       const mcc = new MailcowApiClient(process.env.MAILCOW_API_BASEURL, process.env.MAILCOW_API_KEY);
 
-      await mcc.addMailbox({
+      let r = await mcc.addMailbox({
         domain: "poudriere.be",
         local_part: body.local_part,
         name: body.full_name,
@@ -20,6 +20,13 @@ export default defineEventHandler(async (event) => {
         active: 1
       });
       
+      if(!r) {
+        throw createError({
+          statusCode: 400,
+          statusMessage: "Error while creating mailbox. Maybe it alerady exists."
+        });
+      }
+
       return "Ok"
     } catch (e) {
       return e

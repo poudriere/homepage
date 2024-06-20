@@ -5,10 +5,16 @@
 </script>
 
 <template>
-    <H1> Créer une addresse mail </H1>
-    <div class="aligned">
-		<div class="formContainer">
-			<RegistrationForm />
-		</div>
-    </div>
+	<div>
+		<UContainer>
+			<H1> Créer une addresse mail </H1>
+			<div class="aligned">
+				<div class="formContainer">
+					<RegistrationForm />
+				</div>
+			</div>
+		</UContainer>
+
+		<UNotifications />
+	</div>
 </template>

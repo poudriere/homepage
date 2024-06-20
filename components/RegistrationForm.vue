@@ -2,6 +2,8 @@
     import { object, string, type InferType } from "yup";
     import type { FormSubmitEvent } from "#ui/types";
     
+    const toast = useToast();
+
     const schema = object({
         local_part: string().matches(/^[a-zA-Z\.\-\_\+0-9]+$/).max(64).required("Requis"),
         full_name: string().min(1).required("Requis"),
@@ -22,12 +24,26 @@
         // Do something with event.data
         const { local_part, full_name, password, token } = event.data;
 
-        const todo = await $fetch('/api/register', {
+        function handleResponse(resp: any) {
+            console.log({resp});
+            const code = resp.statusCode;
+
+            if(code == 400) {
+                // Mailbox probably already exists
+                toast.add({ title: "Impossible de créer", description: "Peut être que cette boite mail existe déjà"})
+            } else if(code == 401) {
+                // Wrong token
+                toast.add({ title: "Token invalide" })
+            }
+        }
+
+        $fetch('/api/register', {
             method: 'POST',
             body: {
                 local_part, full_name, password, token
             }
-        })
+        }).then((resp) => handleResponse(resp))
+            .catch((resp) => handleResponse(resp))
     }
 </script>
 
