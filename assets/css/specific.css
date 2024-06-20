@@ -23,3 +23,24 @@
 
     height: auto;
 }
+
+
+/* form */
+
+.fgroup {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.formContainer {
+    width: 50%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .formContainer {
+        width: 100%;
+    }
+}
