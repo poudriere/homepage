@@ -25,6 +25,9 @@ useSeoMeta({
 	<p>
 	    Poudrière est un collectif autogéré Lyonnais de personnes motivé.e.s pour héberger un ensemble d'outils informatiques mis à la disposition des associations, collectifs, organisations et luttes locales.
 	</p>
+	<p>
+		Le collectif mets en avant l'anonymat en proposant des solutions accessibles qui garantissent un minimum de sécurité.
+	</p>
 
 	<H2> Quels sont les services proposés? </H2>
 	<p>
