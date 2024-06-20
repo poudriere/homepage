@@ -13,7 +13,7 @@ definePageMeta({
 
 	<H2> Quels sont les services proposés? </H2>
 	<p>
-	    Poudrière n'en est qu'à ses débuts et n'héberge pour l'instant qu'un serveur Matrix, appelé <HLink href="p0wder">p0wder</HLink> mais pleins d'autres services viendront avec le temps, comme des mails mais pas de spoil :D.
+	    Poudrière n'en est qu'à ses débuts et n'héberge pour l'instant qu'un serveur Matrix, appelé <HLink href="p0wder">p0wder</HLink> et un serveur mail, nommé <HLink href="fuse">Fuse</HLink> mais pleins d'autres services viendront avec le temps.
 	</p>
 	<p>
 	    Si vous souhaitez suggérer une application, contactez le collectif au travers de <HLink href="p0wder">p0wder</Hlink> et nous verrons ce que nous pourrons faire.
