@@ -2,6 +2,21 @@
 definePageMeta({
     layout: "body"
 })
+
+useHead({
+	title: "Collectif Poudrière",
+	meta: [
+		{ name: "description", content: "La page d'accueil du collectif poudrière" },
+	]
+})
+
+useSeoMeta({
+	title: "Collectif Poudrière",
+	ogTitle: "Collectif Poudrière",
+	description: "La page d'accueil du collectif poudrière",
+	ogDescription: "La page d'accueil du collectif poudrière",
+	ogImage: "https://poudriere.be/logo.png"
+})
 </script>
 
 <template>
