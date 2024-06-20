@@ -27,5 +27,13 @@ definePageMeta({
 	    Le tutoriel est disponible à -> <HLink href="/matrix"> ce lien </HLink>
 	</p>
 
+	<H2> Et les tutos? </H2>
+	<p>
+		Justement, voici une liste de tutoriels disponibles rédigés en partie par le collectif:
+	</p>
+	<List>
+		<El> <HLink href="tuto/gpg">Comment créer sa clé gpg pour chiffrer fichiers, mails ou autre ...</HLink></El>
+	</List>
+
     </div>
 </template>
