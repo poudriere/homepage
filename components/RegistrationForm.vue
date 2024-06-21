@@ -69,7 +69,11 @@
 <template>
     <UForm :schema="schema" :state="state" @submit="onSubmit" class="form">
         <UFormGroup label="Email (sans le @poudriere.be)" name="local_part" class="fgroup"  >
-            <UInput v-model="state.local_part" />
+            <UInput v-model="state.local_part">
+		<template #trailing>
+		    <span class="grey">@poudriere.be</span>
+		</template>
+	    </UInput>
         </UFormGroup>
 
         <UFormGroup label="Nom sur la boite" name="full_name" class="fgroup"  >

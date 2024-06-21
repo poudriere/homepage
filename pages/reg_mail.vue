@@ -8,11 +8,9 @@
 	<div>
 		<UContainer>
 			<H1> Créer une addresse mail </H1>
-			<div class="aligned">
-				<div class="formContainer">
-					<RegistrationForm />
-				</div>
-			</div>
+			    <div class="formContainer">
+				    <RegistrationForm />
+			    </div>
 		</UContainer>
 
 		<UNotifications />
