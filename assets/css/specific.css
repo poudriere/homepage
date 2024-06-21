@@ -24,6 +24,25 @@
     height: auto;
 }
 
+.bashCtn {
+    display: flex;
+    align-items: center;
+
+    border: 0px solid;
+    border-radius: 15px;
+    background-color: #bebec5;
+}
+
+.bashCtn > .bashContent {
+    margin-left: 15px;
+    font-size: 1.2em;
+    
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    height: auto;
+
+    white-space: pre-wrap;
 
 /* form */
 

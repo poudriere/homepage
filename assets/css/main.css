@@ -36,6 +36,10 @@ h2.title {
     font-size: 1.7em;
 }
 
+h3.title {
+    font-size: 1.2em;
+}
+
 .aligned {
     display: flex;
 }
