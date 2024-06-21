@@ -1,3 +1,3 @@
 <template>
-    <li style="margin-left: 2em;"> <slot /> </li>
+    <li style="padding-left: 4em;"> - <slot/> </li>
 </template>

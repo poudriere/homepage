@@ -43,4 +43,28 @@
     height: auto;
 
     white-space: pre-wrap;
+
+/* form */
+
+.fgroup {
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+}
+
+.formContainer {
+    width: 100%;
+}
+
+@media only screen and (min-width: 1200px) {
+    .formContainer {
+        width: 50%;
+    }
+}
+
+/* colors */
+.grey {
+    color: "#4a7d40"
 }

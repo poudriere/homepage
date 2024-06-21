@@ -2,6 +2,21 @@
 definePageMeta({
     layout: "body"
 })
+
+useHead({
+	title: "Collectif Poudrière",
+	meta: [
+		{ name: "description", content: "La page d'accueil du collectif poudrière" },
+	]
+})
+
+useSeoMeta({
+	title: "Collectif Poudrière",
+	ogTitle: "Collectif Poudrière",
+	description: "La page d'accueil du collectif poudrière",
+	ogDescription: "La page d'accueil du collectif poudrière",
+	ogImage: "https://poudriere.be/logo.png"
+})
 </script>
 
 <template>
@@ -10,10 +25,13 @@ definePageMeta({
 	<p>
 	    Poudrière est un collectif autogéré Lyonnais de personnes motivé.e.s pour héberger un ensemble d'outils informatiques mis à la disposition des associations, collectifs, organisations et luttes locales.
 	</p>
+	<p>
+		Le collectif mets en avant l'anonymat en proposant des solutions accessibles qui garantissent un minimum de sécurité.
+	</p>
 
 	<H2> Quels sont les services proposés? </H2>
 	<p>
-	    Poudrière n'en est qu'à ses débuts et n'héberge pour l'instant qu'un serveur Matrix, appelé <HLink href="p0wder">p0wder</HLink> mais pleins d'autres services viendront avec le temps, comme des mails mais pas de spoil :D.
+	    Poudrière n'en est qu'à ses débuts et n'héberge pour l'instant qu'un serveur Matrix, appelé <HLink href="p0wder">p0wder</HLink> et un serveur mail, nommé <HLink href="fuse">Fuse</HLink>. D'autres services viendront avec le temps.
 	</p>
 	<p>
 	    Si vous souhaitez suggérer une application, contactez le collectif au travers de <HLink href="p0wder">p0wder</Hlink> et nous verrons ce que nous pourrons faire.

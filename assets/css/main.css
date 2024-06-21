@@ -2,6 +2,16 @@ h1, div, p {
     font-family: "Sometype Mono";
     text-align: justify;
     text-justify: inter-word;
+
+    margin-bottom: 15px;
+}
+
+h1, h2 {
+    font-weight: bold;
+}
+
+h1 {
+    margin-bottom: 20px;
 }
 
 p {
@@ -41,9 +51,11 @@ h3.title {
 
 .body {
     padding-left: 5%;
-    width: 90%;
+    width: 95%;
 
     margin-bottom: 20%;
+
+    line-height: normal;
 }
 
 #goBackCtn {
@@ -58,7 +70,7 @@ h3.title {
 
 @media only screen and (min-width: 1200px) {
     .body {
-	padding-left: 20%;
-	width: 60%;
+        padding-left: 20%;
+        width: 80%;
     }
 }
