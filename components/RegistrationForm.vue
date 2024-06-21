@@ -1,21 +1,34 @@
 <script setup lang="ts">
-    import { object, string, type InferType } from "yup";
+    import { object, string, type InferType, addMethod } from "yup";
     import type { FormSubmitEvent } from "#ui/types";
-    
-    const toast = useToast();
 
-    const schema = object({
-        local_part: string().matches(/^[a-zA-Z\.\-\_\+0-9]+$/).max(64).required("Requis"),
-        full_name: string().min(1).required("Requis"),
-        password: string().matches(/^[a-zA-Z0-9\,\.\/\;\'\[\]\`\<\>\?\:\"\{\}\~\_\-\=\+]+$/).min(8, "Le mot de passe doit faire 8 caractères min.").required("Requis"),
-        token: string().matches(/^[a-zA-Z0-9]+$/, "Le token n'est pas valide").required("Un token est nécéssaire")
+    addMethod(string, "matchesReactive", function (ref, key, err) {
+	return this.test("test-card-type", err, function (value) {
+	    if (value != ref[key]) {
+	    console.log({ref, value})
+		return this.createError({ path: this.path, message: err })
+	    } else {
+		return true
+	    }
+	})
     })
+
+    const toast = useToast();
 
     const state = reactive({
         local_part: undefined,
         full_name: undefined,
         password: undefined,
+	password2: undefined,
         token: undefined
+    })
+
+    const schema = object({
+        local_part: string().matches(/^[a-zA-Z\.\-\_\+0-9]+$/).max(64).required("Requis"),
+        full_name: string().min(1).required("Requis"),
+        password: string().matches(/^[a-zA-Z0-9\,\.\/\;\'\[\]\`\<\>\?\:\"\{\}\~\_\-\=\+]+$/).min(8, "Le mot de passe doit faire 8 caractères min.").required("Requis"),
+	password2: string().matchesReactive(state, "password", "Le mot de passe ne corresponds pas").required("Ce champ est nécéssaire"),
+        token: string().matches(/^[a-zA-Z0-9]+$/, "Le jeton n'est pas valide").required("Un jeton est nécéssaire")
     })
 
     type Schema = InferType<typeof schema>
@@ -67,7 +80,11 @@
             <UInput v-model="state.password" type="password"/>
         </UFormGroup>
 
-        <UFormGroup label="token" name="token" class="fgroup"  >
+        <UFormGroup label="Répétez le mot de passe" name="password2" class="fgroup"  >
+            <UInput v-model="state.password2" type="password"/>
+        </UFormGroup>
+        
+	<UFormGroup label="token" name="token" class="fgroup"  >
             <UInput v-model="state.token" />
         </UFormGroup>
 
