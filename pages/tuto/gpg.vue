@@ -31,7 +31,7 @@
             Cependant, cet algorithme est très facile à casser par analyse statistique. Ici nous allons nous intéresser a un algotithme beaucoup plus sécurisé: le <HLink href="https://fr.wikipedia.org/wiki/Chiffrement_RSA">RSA</HLink>. Le RSA est un algorithme dit asymétrique: <b>la clé de ciffrement est différente de la clé de déchiffrement</b>, et une clé ne peut pas être utilisée pour effectuer le travail de l'autre.
         </p>
         <p>
-            Prennont un exemple concret: Alice et Bob. Alice et Bob veulent s'envoyer un message, sans qu'une personne tierce ne puisse la lire. Alice est la première à envoyer un message: elle chiffre son message avec la <b>clé publique</b> de Bob, une clé que tout le monde peut posséder. Cependant, personne à part Bob ne peut lire le message d'Alice. Et oui! Comme Bob est le seul détenteur de la <b>clé privée</b>, seul Bob peut alors lire le message de Alice, bien que tout le monde ait accès à la clé qui a été utilisée pour vérouiller le message.
+            Prennont un exemple concret: Alice et Bob. Alice et Bob veulent s'envoyer un message, sans qu'une personne tierce ne puisse la lire. Alice est la première à envoyer un message: elle chiffre son message avec la <b>clé publique</b> de Bob, une clé que tout le monde peut posséder. Cependant, personne à part Bob ne peut lire le message d'Alice. Et oui! Comme Bob est le seul détenteur de la <b>clé privée</b>, seul Bob peut alors lire le message de Alice, bien que tout le monde ai accès à la clé qui a été utilisée pour verrouiller le message.
         </p>
 
         <H2> Le problème de la clé privée </H2>
@@ -40,7 +40,7 @@
         </p>
         <List>
             <El> Une approche à cela est de chiffrer la clé privée elle-même avec un mot de passe que seul Bob connaît </El>
-            <El> Une autre serait de stocker la clé sur une <b>clé physique</b> comme une <HLink href="https://www.yubico.com/">YubiKey</HLink>, chiffrée par mot de passe. Ceci évite alors que Bob se fasse pirater et que l'attaquant.e puisse voler la clé et enregistrer le mot de passe puisque la clé virtuelle est stockée sur la clé physique </El>
+            <El> Une autre serait de stocker la clé sur une <b>clé physique</b> comme une <HLink href="https://www.yubico.com/">YubiKey</HLink>, chiffrée par mot de passe. Ceci évite alors que Bob se fasse pirater et que l'attaquant.e puisse voler la clé et enregistrer le mot de passe puisque la clé virtuelle est stockée sur l'objet physique </El>
             <El> Enfin faire attention, utiliser des logiciels fiables, ne pas cliquer sur des liens douteux etc... (utilisez tails c'est cool)</El>
         </List>
 
@@ -48,9 +48,9 @@
             D'ailleurs ce guide est inspiré du très bon <HLink href="https://github.com/drduh/YubiKey-Guide">drduh/YubiKey-Guide</HLink> qui porte sur la configuration d'une telle Yubi Key.
         </p>
 
-        <H2> Assez parlé.e, passe à la pratique </H2>
+        <H2> Assez parlé, place à la pratique </H2>
         <p>
-            Ce tutoriel est à destinée des utilisateur.ice.s de Linux. Si vous avez une distribution de Linux "simple", gpg devrait être installé de base sur votre ordinateur (il l'est sur Tails par exemple). Sinon, vous devrez savoir comment faire ;) (et sinon demandez de l'aide sur <HLink href="/p0wder">p0wder</HLink>). Enfin, ce tutoriel détaille une procédure qui n'est pas particulièrement sécurisée. La faire sur un ordinateur compromis c'est compromettre cette clé. Nous recommandons l'usage d'un second ordinateur, complètement débranché d'internet comme figure sur <HLink href="https://github.com/drduh/YubiKey-Guide">drduh/YubiKey-Guide</HLink> mais Tails c'est très bien aussi.
+            Ce tutoriel est à destinée des utilisateur.ice.s de Linux. Si vous avez une distribution de Linux "simple", gpg devrait être installé de base sur votre ordinateur (il l'est sur Tails par exemple). Sinon, vous devriez savoir comment faire ;) (ou bien demandez de l'aide sur <HLink href="/p0wder">p0wder</HLink>). Enfin, ce tutoriel détaille une procédure qui n'est pas particulièrement sécurisée. La faire sur un ordinateur compromis c'est compromettre cette clé. Nous recommandons l'usage d'un second ordinateur, complètement débranché d'internet comme figure sur <HLink href="https://github.com/drduh/YubiKey-Guide">drduh/YubiKey-Guide</HLink> mais Tails très bien aussi.
         </p>
         
         <H3> Optionnel: Renforcez la sécurité de GPG</H3>
