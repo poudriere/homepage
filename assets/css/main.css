@@ -1,11 +1,8 @@
-h1, div, p {
-    font-family: "Sometype Mono";
+h1, div, p, ul {
     text-align: justify;
     text-justify: inter-word;
-
     margin-bottom: 15px;
 }
-
 h1, h2 {
     font-weight: bold;
 }
@@ -16,7 +13,6 @@ h1 {
 
 p {
     text-indent: 27px;
-    font-size: 1.2em;
 }
 
 a {
@@ -56,6 +52,7 @@ h3.title {
     margin-bottom: 20%;
 
     line-height: normal;
+    font-size: 1.2em;
 }
 
 #goBackCtn {
@@ -65,6 +62,7 @@ h3.title {
 }
 
 .body {
+    font-family: "Sometype Mono";
     margin-top: 60px;
 }
 

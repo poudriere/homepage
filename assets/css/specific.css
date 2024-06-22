@@ -36,14 +36,14 @@
 .bashCtn > .bashContent {
     margin-left: 15px;
     font-size: 1.2em;
-    
+
     padding-top: 15px;
     padding-bottom: 15px;
 
     height: auto;
 
     white-space: pre-wrap;
-
+}
 /* form */
 
 .fgroup {
@@ -66,5 +66,5 @@
 
 /* colors */
 .grey {
-    color: "#4a7d40"
+    color: #4a7d40;
 }

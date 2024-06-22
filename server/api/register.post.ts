@@ -37,6 +37,4 @@ export default defineEventHandler(async (event) => {
       statusMessage: 'Token invalid',
     })
   }
-
-  return { body }
 })
