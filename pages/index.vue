@@ -17,11 +17,14 @@ useSeoMeta({
 	ogDescription: "La page d'accueil du collectif poudrière",
 	ogImage: "https://poudriere.be/logo.png"
 })
+
+const links = [{ title: "client_mail", href: "https://fuse.poudriere.be/SOGo" }, { title: "p0wder_web", href: "https://element.poudriere.be" }]
 </script>
 
 <template>
     <div>
-	<H1> Qu'est ce que Poudrière? </H1>
+	<H1 class="qlinks"> Qu'est ce que Poudrière? </H1>
+	<QLinks :links=links />
 	<p>
 	    Poudrière est un collectif autogéré Lyonnais hébergeant un ensemble d'outils informatiques mis à la disposition des associations, collectifs, organisations et luttes locales.
 	</p>
