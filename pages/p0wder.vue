@@ -3,20 +3,24 @@
 		layout: "body-return"
     })
 
-	useHead({
-		title: "p0wder",
-		meta: [
-			{ name: "description", content: "Description de p0wder, le serveur matrix hébergé chez Poudrière." },
-		]
-	})
+    useHead({
+	title: "p0wder",
+	meta: [
+	    { name: "description", content: "Description de p0wder, le serveur matrix hébergé chez Poudrière." },
+	]
+    })
+
+    const links = [{ title: "client_web", href: "https://element.poudriere.be" }]
 </script>
 
 <template>
     <div>
-	<H1> p0wder, un lieu d'échange </H1>
-    <p>
-        p0wder est un serveur <HLink href="https://matrix.org">Matrix</HLink> hébergé à Lyon par nos soins. Le serveur n'est disponible qu'en cooptation.
-    </p>
+	<H1 class="qlinks"> p0wder, un lieu d'échange </H1>
+	<QLinks :links=links />
+
+	<p>
+	    p0wder est un serveur <HLink href="https://matrix.org">Matrix</HLink> hébergé à Lyon par nos soins. Le serveur n'est disponible qu'en cooptation.
+	</p>
 
 	<H2> Qu'est ce que c'est Matrix? </H2>
 	<p>

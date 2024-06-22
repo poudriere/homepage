@@ -2,6 +2,11 @@
     definePageMeta({
 		layout: "body-return"
     })
+
+
+    useHead({
+	title: "Création d'une boite mail"
+    })
 </script>
 
 <template>
