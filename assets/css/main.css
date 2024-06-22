@@ -63,6 +63,8 @@ h3.title {
     position: absolute;
     top: 25px;
     left: 25px;
+
+    font-family: "Sometype Mono";
 }
 
 .body {

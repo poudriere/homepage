@@ -1,24 +1,24 @@
 <script setup lang="ts">
-definePageMeta({
-    layout: "body"
-})
+    definePageMeta({
+	layout: "body"
+    })
 
-useHead({
+    useHead({
 	title: "Collectif Poudrière",
 	meta: [
-		{ name: "description", content: "La page d'accueil du collectif poudrière" },
+	    { name: "description", content: "La page d'accueil du collectif poudrière" },
 	]
-})
+    })
 
-useSeoMeta({
+    useSeoMeta({
 	title: "Collectif Poudrière",
 	ogTitle: "Collectif Poudrière",
 	description: "La page d'accueil du collectif poudrière",
 	ogDescription: "La page d'accueil du collectif poudrière",
 	ogImage: "https://poudriere.be/logo.png"
-})
+    })
 
-const links = [{ title: "client_mail", href: "https://fuse.poudriere.be/SOGo" }, { title: "p0wder_web", href: "https://element.poudriere.be" }]
+    const links = [{ title: "client_mail", href: "https://fuse.poudriere.be/SOGo" }, { title: "p0wder_web", href: "https://element.poudriere.be" }]
 </script>
 
 <template>

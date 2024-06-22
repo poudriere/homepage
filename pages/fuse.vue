@@ -2,11 +2,19 @@
     definePageMeta({
 	layout: "body-return"
     })
+
+
+    useHead({
+	title: "Fuse"
+    })
+
+    const links = [{ title: "client_web", href: "https://fuse.poudriere.be/SOGo" }, { title: "creation_compte", href: "/reg_mail" }]
 </script>
 
 <template>
         <div>
-        <H1> Fuse, un serveur mail </H1>
+        <H1 class="qlinks"> Fuse, un serveur mail </H1>
+	<QLinks :links=links /> 
 
         <p>
             Fuse est un service gratuit de boite mail, comme gmail, orange ou protonmail. 
