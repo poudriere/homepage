@@ -28,7 +28,7 @@
         full_name: string().min(1).required("Requis"),
         password: string().matches(/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{8,128}$/, "Le mot de passe doit contenir une lettre minuscule et majuscule, un chiffre, un caractère spécial et au moins 8 caractères").min(8, "Le mot de passe doit faire 8 caractères min.").required("Requis"),
 	password2: string().matchesReactive(state, "password", "Le mot de passe ne corresponds pas").required("Ce champ est nécéssaire"),
-        token: string().matches(/^[a-zA-Z0-9]+$/, "Le jeton n'est pas valide").required("Un jeton est nécéssaire")
+        token: string().matches(/^[a-zA-Z0-9\.\_\-\:]+$/, "Le jeton n'est pas valide").required("Un jeton est nécéssaire")
     })
 
     type Schema = InferType<typeof schema>
