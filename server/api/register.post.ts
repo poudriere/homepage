@@ -29,7 +29,13 @@ export default defineEventHandler(async (event) => {
 
       return "Ok"
     } catch (e) {
-      return e
+      console.log("An error occured during registration...");
+      console.log(e);
+      
+      throw createError({
+        statusCode: 500,
+        statusMessage: "internal error."
+      })
     }
   } else {
     throw createError({
