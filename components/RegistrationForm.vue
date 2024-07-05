@@ -47,13 +47,13 @@
             } else if(code == 401) {
                 // Wrong token
                 toast.add({ title: "Token invalide" })
-            } else if(code == 200) {
-	    	toast.add({ title: "Email crée avec succès" })
+            } else if(code == 200 || resp == "Ok") {
+	    	    toast.add({ title: "Email crée avec succès" })
 		
-		setTimeout(() => navigateTo("/fuse"), 5000);
-	    } else {
-		toast.add({ title: `Erreur: CODE: ${code}` });
-	    }
+		        setTimeout(() => navigateTo("/fuse"), 5000);
+	        } else {
+		        toast.add({ title: `Erreur: CODE: ${code}` });
+	        }
         }
 
         $fetch('/api/register', {
